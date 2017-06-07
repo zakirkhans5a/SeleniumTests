@@ -1,2 +1,0 @@
-# SeleniumTests
-SeleniumTests

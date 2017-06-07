@@ -173,7 +173,7 @@ public class Homepage extends PageBase {
         }
 
         List<WebElement> subMenuLinks = topMenu.findElements(By.xpath(".//ul[@class='header-nav-flyout__columns']/li//a"));
-        delayFor(1000);
+        delayFor(2000);
         for (int i = 0; i < subMenuLinks.size(); i++) {
             WebElement menu = topMenu;
             Actions actions = new Actions(driver);
@@ -220,7 +220,7 @@ public class Homepage extends PageBase {
      * from the top navigation bar on Homepage
      * */
     @LogReport(name = "Product Page Validation", description = "Product Page validated")
-    public void validateProductPage(String text){
+    public void validateProductArrayPage(String text){
         WebElement labelElement = driver.findElement(By.xpath(".//*[@id='pa-topnav']/h1/span"));
         highlightElement(labelElement);
         String actual = labelElement.getText();

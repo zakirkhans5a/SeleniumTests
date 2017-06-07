@@ -14,7 +14,7 @@ public class ProductArrayPageTests extends ScriptBase {
         saksFifth.homepage().varifyHomepage();
         saksFifth.homepage().closePopup();
         saksFifth.homepage().navigateToProductPages("MEN", "Apparel".toUpperCase());
-        saksFifth.homepage().validateProductPage("SHOP ALL");
+        saksFifth.homepage().validateProductArrayPage("SHOP ALL");
         saksFifth.productArrayPage().clickFirstItem();
         saksFifth.productDetailPage().validateFirstItem();
     }

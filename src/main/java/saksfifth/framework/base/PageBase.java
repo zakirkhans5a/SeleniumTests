@@ -90,7 +90,7 @@ public class PageBase {
             JavascriptExecutor js = (JavascriptExecutor) driver;
             js.executeScript(
                     "arguments[0].setAttribute('style', arguments[1]);",
-                    element, "border: 2px solid green;");
+                    element, "border: 2px solid purple;");
             delayFor(500);
             js.executeScript(
                     "arguments[0].setAttribute('style', arguments[1]);",
@@ -98,8 +98,6 @@ public class PageBase {
             delayFor(500);
         }
     }
-
-
 
 }
 
